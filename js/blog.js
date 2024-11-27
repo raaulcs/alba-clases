@@ -1,7 +1,7 @@
 document.addEventListener("DOMContentLoaded", () => {
   const blogContainer = document.getElementById("blog-posts");
 
-  fetch("blog-posts.json")
+  fetch("posts/blog-posts.json")
     .then((response) => response.json())
     .then((posts) => {
       if (posts.length > 0) {
